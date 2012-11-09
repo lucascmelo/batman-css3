@@ -10,7 +10,7 @@
 			margin-top:150px;
 			margin-left:100px;;
 			 border-radius:25% 25% 50% 50%/60% 50% 40% 40%;
-			background-color: black;
+			background-color: #060100;
 			position:relative;
 		}
 		#forehead .ear-left,
@@ -20,7 +20,7 @@
 			position: absolute;
 			left: 64px;
 			top: -114px;
-			border-bottom: 139px solid black;
+			border-bottom: 139px solid #060100;
 			border-left: 40px solid transparent;
 			border-right: 50px solid transparent;
 			-webkit-transform: rotate(7deg);
@@ -30,6 +30,64 @@
 			left: 198px;
 			-webkit-transform: rotate(-7deg);
 		}
+		#forehead .skull{
+			width: 100px;
+			height: 30px;
+			display: block;
+			margin: 0 auto;
+			border-radius: 50%/20%;
+			position: relative;
+			top: -5px;
+			z-index: 0;
+			background: #060100;
+		}
+		
+		#countenance{
+			position:relative;
+			top:85px;
+		}
+		.eye-left, .eye-right{
+			width: 0;
+			height: 0;
+			display: block;
+			position: relative;
+			top: 15px;
+			left: 35px;
+			z-index: 0;
+			border-bottom: 30px solid #acabff;
+			border-left: 50px solid transparent;
+			border-right: 75px solid transparent;
+			-webkit-transform: rotate(-150deg);
+			border-radius: 0 0 0 0;
+		}
+		.eye-right{
+			left: 200px;
+			-webkit-transform: rotate(150deg);
+			top: -16px;
+			border-left: 75px solid transparent;
+			border-right: 50px solid transparent;
+		}
+		
+		.mask {
+		    width: 250px;
+			height: 100px;
+			margin: 17px auto;
+			border-width: 140px 35px 0;
+			border-style: solid;
+			border-color: #82565E transparent;
+			border-radius: 100px 100px 1px 1px;
+		}
+		
+		.mask .triangle{
+			width: 0;
+			height: 0;
+			border-bottom: 150px solid blue;
+			border-left: 100px solid transparent;
+			border-right: 100px solid transparent;
+			-webkit-transform: rotate(-150deg);
+			position:relative;
+		}
+		
 	</style>
 </head>
 <body>
@@ -43,6 +101,7 @@
 			<span class="eye-left"></span>
 			<span class="eye-right"></span>
 			<div class="mask">
+				<span class="triangle"></span>
 				<span class="nose"></span>
 				<span class="mouth"></span>
 			</div>

@@ -6,7 +6,7 @@
 	<style type="text/css">
 		#head{
 			width:350px;
-			height:500px;
+			height:425px;
 			margin-top:150px;
 			margin-left:100px;;
 			 border-radius:25% 25% 50% 50%/60% 50% 40% 40%;
@@ -67,26 +67,78 @@
 			border-left: 75px solid transparent;
 			border-right: 50px solid transparent;
 		}
+		#countenance{
+			position: relative;
+			top: 85px;
+			overflow: hidden;
+			padding: 20px 0 0 0;
+		}
 		
 		.mask {
 		    width: 250px;
 			height: 100px;
 			margin: 17px auto;
-			border-width: 140px 35px 0;
-			border-style: solid;
-			border-color: #82565E transparent;
-			border-radius: 100px 100px 1px 1px;
-		}
-		
-		.mask .triangle{
-			width: 0;
-			height: 0;
-			border-bottom: 150px solid blue;
-			border-left: 100px solid transparent;
-			border-right: 100px solid transparent;
-			-webkit-transform: rotate(-150deg);
+			background: #82565E;
+			border-radius: 20px 20px 80px 80px;
 			position:relative;
 		}
+		
+		.circle{
+			width:125px;
+			height:125px;
+			border-radius:50%/50%;
+			display:block;
+			position:absolute;
+			top:0;
+			left:50%;
+			margin-left:-62.5px;
+		}
+		
+		.mask .triangle-left{
+			width: 0;
+			height: 0;
+			border-bottom: 100px solid black;
+			border-left: 30px solid transparent;
+			border-right: 160px solid transparent;
+			position: absolute;
+			display: block;
+			top: 44px;
+			left: -40px;
+		}
+		.mask .triangle-right{
+			width: 0;
+			height: 0;
+			border-bottom: 100px solid black;
+			border-left: 160px solid transparent;
+			border-right: 30px solid transparent;
+			position: absolute;
+			display: block;
+			top: 44px;
+			right: -40px;
+		}
+		
+		.mouth{
+			width: 0;
+			height: 0;
+			border-bottom: 2px solid black;
+			border-left: 100px solid transparent;
+			border-right: 0px solid transparent;
+			position: absolute;
+			display: block;
+			top: 40px;
+			left: 68px;
+			-webkit-transform: rotate(-7deg);
+		}
+		
+		.mask hr{
+			border: 1px solid black;
+			top: 55px;
+			position: relative;
+			width: 15px;
+			-webkit-transform: rotate(-4deg);
+		}
+		
+		
 		
 	</style>
 </head>
@@ -101,9 +153,11 @@
 			<span class="eye-left"></span>
 			<span class="eye-right"></span>
 			<div class="mask">
-				<span class="triangle"></span>
-				<span class="nose"></span>
+				<span class="circle"></span>
+				<span class="triangle-left"></span>
+				<span class="triangle-right"></span>
 				<span class="mouth"></span>
+				<hr />
 			</div>
 		</div>
 	</div>

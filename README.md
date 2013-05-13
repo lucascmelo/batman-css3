@@ -1,2 +1,2 @@
 Batman - CSS3 Pure =)
-link: http://lucascmelo.github.io/batman-css3/
+http://lucascmelo.github.io/batman-css3/
